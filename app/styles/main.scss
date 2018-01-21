@@ -1,0 +1,134 @@
+/* Declaration */
+$font-robot:    'Roboto Condensed', sans-serif;
+$font-opensans: 'Open Sans', sans-serif;
+$white-color: #ffffff;
+$black-color: #4d4e50;
+$header-bg: #6b4291;
+$primary-comment-color: #8c8f94;
+$seconday-comment-color: #999a9c;
+$gray-border: #e8ecef;
+$no-value: 0;
+
+html, body {
+  padding: $no-value;
+}
+
+.container-fluid {
+	padding: $no-value;
+	padding-left: 2.5%;
+}
+
+header {
+	background: $header-bg;
+	height: 45px;
+	text-align: center;
+
+	.backbtn {
+		text-align: left;
+	}
+
+	.header-icon {
+		color: $white-color;
+		font-size: 1.85em;
+		padding: 10px 0;
+	}
+
+	.header-title {
+		color: $white-color;
+		font-family: $font-robot;
+		font-size: 1.8em;
+		font-weight: 300;
+	    letter-spacing: 3px;
+	    margin: $no-value;
+		padding: 8px 0;
+	}
+}
+
+.activityList {
+	list-style: none;
+	margin: $no-value;
+	padding: $no-value;
+
+	li {
+		border-bottom: 1px solid $gray-border;
+		color: $black-color;
+		display: block;
+	    line-height: 1.3em;
+	    margin-left: 15px;
+	    overflow: hidden;
+	    padding-bottom: 10px;
+	    padding-top: 10px;
+	    position: relative;
+
+	    &:last-child {
+			border-bottom: none;
+		}
+
+		.activityitem {
+			.avatar-container {
+				margin-right: $no-value;
+				padding-left: $no-value;
+
+				img {
+					&.avatar {
+						border: 1px solid $gray-border;
+						border-radius: 50%;
+						display: block;
+					}
+				}
+			}
+			.detail {
+				padding-left: $no-value;
+
+				h4 {
+					font-family: $font-opensans;
+					font-size: 18px;
+					font-weight: 400;
+					line-height: 1.5em;
+					margin: $no-value;
+					padding: $no-value;
+				}
+
+				p {
+					margin: $no-value;
+					padding: $no-value;
+					font-family: $font-opensans;
+				    font-size: 16px;
+				    font-weight: 400;
+				    line-height: 1.3em;
+
+				    span{
+				    	&.type {
+					    	color : $primary-comment-color;
+					    	font-weight: 300;
+					    }
+
+					    &.time {
+							color: $seconday-comment-color;
+							font-style: italic;
+						}
+					}
+				}
+
+			}
+		}
+	}
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 540px) { 
+
+	.header-title {
+		font-size: 1.5em;
+	}
+
+	.activityList li .activityitem .detail h4 { 
+		font-size: 16px;
+	}
+
+	.activityList li .activityitem .detail p { 
+		font-size: 14px;
+	}
+}

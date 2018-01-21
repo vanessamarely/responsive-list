@@ -1,0 +1,83 @@
+/* Declaration */
+html, body {
+  padding: 0; }
+
+.container-fluid {
+  padding: 0;
+  padding-left: 2.5%; }
+
+header {
+  background: #6b4291;
+  height: 45px;
+  text-align: center; }
+  header .backbtn {
+    text-align: left; }
+  header .header-icon {
+    color: #ffffff;
+    font-size: 1.85em;
+    padding: 10px 0; }
+  header .header-title {
+    color: #ffffff;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.8em;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 8px 0; }
+
+.activityList {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .activityList li {
+    border-bottom: 1px solid #e8ecef;
+    color: #4d4e50;
+    display: block;
+    line-height: 1.3em;
+    margin-left: 15px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: relative; }
+    .activityList li:last-child {
+      border-bottom: none; }
+    .activityList li .activityitem .avatar-container {
+      margin-right: 0;
+      padding-left: 0; }
+      .activityList li .activityitem .avatar-container img.avatar {
+        border: 1px solid #e8ecef;
+        border-radius: 50%;
+        display: block; }
+    .activityList li .activityitem .detail {
+      padding-left: 0; }
+      .activityList li .activityitem .detail h4 {
+        font-family: "Open Sans", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.5em;
+        margin: 0;
+        padding: 0; }
+      .activityList li .activityitem .detail p {
+        margin: 0;
+        padding: 0;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.3em; }
+        .activityList li .activityitem .detail p span.type {
+          color: #8c8f94;
+          font-weight: 300; }
+        .activityList li .activityitem .detail p span.time {
+          color: #999a9c;
+          font-style: italic; }
+
+/* Responsive */
+@media screen and (max-width: 540px) {
+  .header-title {
+    font-size: 1.5em; }
+
+  .activityList li .activityitem .detail h4 {
+    font-size: 16px; }
+
+  .activityList li .activityitem .detail p {
+    font-size: 14px; } }

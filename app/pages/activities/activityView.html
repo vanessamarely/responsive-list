@@ -1,0 +1,19 @@
+<div id="activity">
+	<ul class="activityList">
+		<li ng-repeat="(key, activity) in recentActivities">
+			<div class="activityitem">
+				<div class="col-md-1 col-sm-2 col-xs-3 avatar-container">
+					<img class="avatar" ng-src="{{ activity.authorAvatar }}" alt="">
+				</div>
+				<div class="col-md-11 col-sm-10 col-xs-9 detail">
+					<p>
+						<span class="author">{{ activity.author }}</span>
+						<span class="type">{{ typeText[activity.nodeTypeString] }}</span>
+					</p>
+					<h4 class="title">{{ activity.title }}</h4>
+					<p><span class="time">{{ activityTime[key] }}</span></p>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>

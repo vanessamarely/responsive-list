@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="Spigit">
+	<head>
+		<!-- meta -->
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+		<title>Spigit</title>
+		<!-- styles -->
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+	    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css"/>
+	    <link rel="stylesheet" href="bower_components/animate.css/animate.css"/>
+	    <!-- build:css(.tmp) styles/main.css -->
+	    <link rel="stylesheet" href="styles/main.css"/>
+	    <!-- endbuild -->
+
+	    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Open+Sans:300,300i,400|Roboto+Condensed:300,300i,400" rel="stylesheet">
+
+	</head>
+	<body>
+		<!-- header -->
+		<header id="header" class="container-fluid">
+			<div class="col-md-2 col-sm-3 col-xs-3 backbtn">
+				<i class="header-icon  fa fa-chevron-left" aria-hidden="true"></i>
+			</div>
+			<div class="col-md-8 col-sm-7 col-xs-7">
+				<h1 class="header-title">Activity</h1>
+			</div>
+			<div class="col-md-2 col-sm-2 col-xs-2">
+				<i class="header-icon fa fa-bars" aria-hidden="true"></i>
+			</div>
+		</header>
+		<!-- /header -->
+	    <div class="container-fluid">
+	      	
+	      	<!-- views -->
+	      	<div ng-view></div>
+    	</div>
+	    <!-- scripts -->
+	    <script src="bower_components/jquery/dist/jquery.js"></script>
+	    <script src="bower_components/angular/angular.js"></script>
+	    <script src="bower_components/angular-route/angular-route.js"></script>
+	    <script src="bower_components/angular-animate/angular-animate.js"></script>
+	    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+	    <!-- Angular Structure -->
+	    <script src="app.js"></script>
+	    
+	    <!-- Controllers -->
+	    <script src="pages/activities/activityController.js"></script>
+
+	    <!-- Services -->
+	    <script src="pages/activities/activityService.js"></script>
+  	</body>
+</html>
